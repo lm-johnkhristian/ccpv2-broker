@@ -149,7 +149,7 @@ const StepCard = ({ number, icon: Icon, text1, text2, href = "#", tooltip }: { n
     title={tooltip}           
     whileHover={{ scale: 1.05, y: -4 }}
     whileTap={{ scale: 0.95 }}
-    className="flex flex-col items-center text-center gap-6 bg-surface border-2 border-primary/40 p-10 rounded-2xl hover:bg-primary/5 transition-colors shadow-2xl w-full h-full max-w-[380px] cta-pulse-animation relative"
+    className="flex flex-col items-center text-center gap-6 bg-gradient-to-t from-[#010609] via-primary/20 to-primary/60 border-2 border-primary/40 p-10 rounded-2xl hover:from-[#010609] hover:via-primary/30 hover:to-primary/80 transition-colors shadow-2xl w-full h-full max-w-[380px] cta-pulse-animation relative"
   >
     <div className="absolute -top-6 bg-primary text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-black shadow-lg border-4 border-surface">
       {number}
@@ -157,9 +157,9 @@ const StepCard = ({ number, icon: Icon, text1, text2, href = "#", tooltip }: { n
     <motion.div 
       animate={{ scale: [1, 1.15, 1], rotate: [0, 5, -5, 0] }}
       transition={{ duration: 4, ease: "easeInOut", repeat: Infinity }}
-      className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center rounded-full bg-primary/20 text-primary mt-4 shadow-[0_0_20px_rgba(32,166,185,0.4)]"
+      className="flex-shrink-0 w-28 h-28 sm:w-32 sm:h-32 flex items-center justify-center rounded-full bg-slate-800 border-2 border-slate-300 text-slate-100 mt-4 shadow-[0_0_30px_rgba(192,192,192,0.8)]"
     >
-      <Icon className="w-16 h-16 sm:w-20 sm:h-20" />
+      <Icon className="w-16 h-16 sm:w-20 sm:h-20 drop-shadow-[0_0_15px_rgba(255,255,255,0.9)]" />
     </motion.div>
     <div className="text-[1.1rem] sm:text-xl font-bold flex flex-col gap-2 mt-2 flex-grow justify-center">
       <span className="underline decoration-primary/50 underline-offset-4 leading-tight">{text1}</span>
@@ -439,11 +439,11 @@ export default function App() {
                   tooltip="Click to watch video"
                 />
               </div>
-              <div className="hidden xl:flex self-center flex-shrink-0 text-primary animate-pulse">
-                <ArrowRight className="w-16 h-16 drop-shadow-[0_0_10px_rgba(32,166,185,0.8)]" />
+              <div className="hidden xl:flex self-center flex-shrink-0 text-slate-300 animate-pulse">
+                <ArrowRight className="w-16 h-16 drop-shadow-[0_0_15px_rgba(192,192,192,0.8)]" />
               </div>
-              <div className="xl:hidden flex self-center flex-shrink-0 text-primary animate-pulse">
-                <ArrowDown className="w-16 h-16 drop-shadow-[0_0_10px_rgba(32,166,185,0.8)]" />
+              <div className="xl:hidden flex self-center flex-shrink-0 text-slate-300 animate-pulse">
+                <ArrowDown className="w-16 h-16 drop-shadow-[0_0_15px_rgba(192,192,192,0.8)]" />
               </div>
               <div className="flex flex-1 justify-center">
                 <StepCard 
@@ -455,11 +455,11 @@ export default function App() {
                   tooltip="Sign-up for the Client"
                 />
               </div>
-              <div className="hidden xl:flex self-center flex-shrink-0 text-primary animate-pulse">
-                <ArrowRight className="w-16 h-16 drop-shadow-[0_0_10px_rgba(32,166,185,0.8)]" />
+              <div className="hidden xl:flex self-center flex-shrink-0 text-slate-300 animate-pulse">
+                <ArrowRight className="w-16 h-16 drop-shadow-[0_0_15px_rgba(192,192,192,0.8)]" />
               </div>
-              <div className="xl:hidden flex self-center flex-shrink-0 text-primary animate-pulse">
-                <ArrowDown className="w-16 h-16 drop-shadow-[0_0_10px_rgba(32,166,185,0.8)]" />
+              <div className="xl:hidden flex self-center flex-shrink-0 text-slate-300 animate-pulse">
+                <ArrowDown className="w-16 h-16 drop-shadow-[0_0_15px_rgba(192,192,192,0.8)]" />
               </div>
               <div className="flex flex-1 justify-center">
                 <StepCard 
