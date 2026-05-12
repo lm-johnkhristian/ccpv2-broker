@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import "tailwindcss";
+@import "./mesh-gradient.css";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  --color-primary: #20a6b9;
+  --color-primary-dark: #177a88;
+  --color-bg-dark: #162432;
+  --color-bg-light: #f8fafc;
+  --color-surface-dark: #1a2a3a;
+  --color-surface-light: #ffffff;
+  --color-text-dark: #f1f5f9;
+  --color-text-light: #0f172a;
+  --color-teal-500: #20a6b9;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-bg-light);
+    --foreground: var(--color-text-light);
+    --surface: var(--color-surface-light);
+  }
+
+  .dark {
+    --background: var(--color-bg-dark);
+    --foreground: var(--color-text-dark);
+    --surface: var(--color-surface-dark);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: "Montserrat", sans-serif;
+  }
+}

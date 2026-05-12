@@ -1,0 +1,39 @@
+@keyframes gradient-animation {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.body-gradient-bg {
+  /* Light mode reversed animated gradient background */
+  background: linear-gradient(-160deg, #f0fdf4, #e0f2fe, #f8fafc);
+  background-size: 300% 300%;
+  animation: gradient-animation 20s ease infinite;
+  background-attachment: fixed;
+}
+.dark .body-gradient-bg {
+  /* Dark mode reversed and darker animated gradient */
+  background: linear-gradient(-160deg, #000000, #041014, #000000, #01080a);
+  background-size: 300% 300%;
+  animation: gradient-animation 25s ease infinite alternate;
+  background-attachment: fixed;
+}
+
+/* Particle animation classes */
+
+@keyframes cta-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(32, 166, 185, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(32, 166, 185, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(32, 166, 185, 0); }
+}
+
+.cta-pulse-animation {
+  animation: cta-pulse 2s infinite;
+}
+.cta-pulse-animation:hover {
+  animation: none;
+  box-shadow: 0 0 15px rgba(32, 166, 185, 0.5), 0 0 30px rgba(32, 166, 185, 0.3);
+}
+
