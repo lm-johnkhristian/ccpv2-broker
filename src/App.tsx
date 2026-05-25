@@ -435,7 +435,7 @@ export default function App() {
                   icon={PlayCircle}
                   text1="Watch the Overview"
                   text2="Video of the Client Connection Platform"
-                  href="https://www.youtube.com/watch?v=S0goy275MPs"
+                  href="https://youtu.be/zTJkilTwbwA?si=A2UcjmdVxhLS224G"
                   tooltip="Click to watch video"
                 />
               </div>
