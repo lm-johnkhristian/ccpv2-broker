@@ -220,6 +220,18 @@ const MeshBackground = () => (
 );
 
 export default function App() {
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+      setTimeout(() => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // small delay to ensure DOM is rendered and layout is calculated
+    }
+  }, []);
+
   return (
     <div className="min-h-screen selection:bg-primary/30 relative body-gradient-bg z-0 overflow-hidden">
       {/* Background gradients */}
