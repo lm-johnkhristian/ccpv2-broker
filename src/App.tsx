@@ -463,7 +463,7 @@ export default function App() {
                   icon={FileText}
                   text1="Sign-up for the Client"
                   text2="Connection Platform"
-                  href="https://lastingmark.com/stop-chasing-leads-ccp/"
+                  href="https://lastingmark.com/broker/"
                   tooltip="Sign-up for the Client"
                 />
               </div>
