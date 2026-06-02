@@ -514,7 +514,7 @@ export default function App() {
                 icon={ListChecks}
                 text1="Review the Marketing Used"
                 text2="to Generate Calls for the Client Connection Platform"
-                href="https://docs.google.com/presentation/d/1RA83xejfLQxrYkcWjNsLrqBj_urBobZz62YRtBezzaA/edit?usp=sharing"
+                href="https://docs.google.com/presentation/d/1fgLijBlQLXYxRUYlzXx6DDSnqwiZsrOXu0wB2wxaSaA/edit?usp=sharing"
                 tooltip="Review Marketing"
               />
               <CtaButton 
